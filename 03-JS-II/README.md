@@ -41,7 +41,7 @@ console.log(variableInexistente); // undefined
 
 ```javascript
 let numeroTelefono = '11-1234-5678';
-numeroTelefono = null;
+let numeroTelefono = null;
 
 numeroTelefono; // null
 ```
@@ -149,11 +149,11 @@ También podemos combinar dos expresiones de igualdad y preguntar si alguna de l
 El primer operador lógico que veremos es el operador "Y" ("AND"). Está escrito con dos símbolos (`&&`). Esto evaluará ambas expresiones y devolverá verdadero si AMBAS expresiones son `true`. Si uno (o ambos) de ellos es falso, este operador devolverá `false`:
 
 ```javascript
-if (100 > 10 && 10 === 10) {
+if (100 > 10 && 10 === 10 && 1 ===1  && 3===3 && 4===4&& "caca" === "caca") {
     console.log('Ambas declaraciones son ciertas, este código se ejecutará');
 }
 
-if (10 === 9 && 10 > 9) {
+if (10 === 9 && 10 > 9 && 1 ===1  && 3===3 && 4===4&& "caca" === "caca") {
     console.log('Una de las declaraciones es false, por lo que && devolverá false, y este código no se ejecutará');
 }
 ```
@@ -203,7 +203,6 @@ Un par de cosas a tener en cuenta sobre los operadores lógicos.
 La mayoría del software se ejecuta en bucles, evaluando expresiones una y otra vez hasta que devuelve lo que estamos buscando o se detiene después de cierto tiempo. Javascript tiene dos expresiones de bucle incorporadas y hoy veremos la primera, el bucle "for".
 
 Los bucles `for` tienen una sintaxis única, similar a la instrucción `if`, pero un poco más compleja. Primero tenemos la palabra clave `for`, seguida de paréntesis y luego abrir y cerrar llaves. Dentro de los paréntesis necesitaremos tres cosas. Primero, debemos declarar una variable, esto es sobre lo que se repetirá el bucle. Entonces tendremos una expresión condicional, el ciclo continuará sucediendo hasta que esta declaración sea `false`. Tercero, incrementaremos nuestra variable. Las tres declaraciones están separadas por un punto y coma.
-
 ```javascript
 for (let i = 0                 ; i < 10                 ; i++          ) {
 // | Declaramos una variable | Expresión condcicional | Incrementamos la variable |
