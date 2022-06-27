@@ -31,11 +31,9 @@ function conection(status) {
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
   switch (status){
-    case 1: "Online";
-      break;
-    case 2: "Away";
-      break;
-    default: "Offline";
+    case 1: return "Online";
+    case 2: return "Away";
+    default: return "Offline";
   } 
 }
 
@@ -47,13 +45,10 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
   switch(idioma){
-    case "aleman" : "Guten Tag!";
-      break;
-    case "mandarin" : "Ni Hao!";
-      break;
-    case "ingles" : "Hello!";
-      break;
-    default: "Hola!";
+    case "aleman" : return "Guten Tag!";
+    case "mandarin" : return "Ni Hao!";
+    case "ingles" : return "Hello!";
+    default: return "Hola!";
   }
 }
 
@@ -66,15 +61,11 @@ function colors(color) {
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
   switch(color){
-    case "blue" : "This is blue";
-      break;
-    case "red" : "This is red";
-      break
-    case "green" : "This is green";
-      break;
-    case "orange" : "This is orange";
-      break;
-    default : "Color not found";
+    case "blue" : return 'This is blue';
+    case "red" : return 'This is red';
+    case "green" : return 'This is green';
+    case "orange" : return 'This is orange';
+    default : return 'Color not found';
   }
 }
 
@@ -133,7 +124,7 @@ function operadoresLogicos(num1, num2, num3) {
   } else if (num1 > num2 && num1 > num3 && num1 > 0) {
     return "Número 1 es mayor y positivo";
   } else if (num3 > num1 && num3 > num2){
-    return num3++;   
+    return num3 + 1;   
   } else {
     return false;
   }
