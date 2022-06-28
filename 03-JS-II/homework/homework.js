@@ -189,8 +189,8 @@ function doWhile(numero) {
   var resultado = 0;
   var i = 0;
   do {
-    i = i + 1;
-    resultado = resultado + 5;
+    i += 1;
+    resultado += 5;
   } while (i < 8);
   return (numero + resultado);
 }
