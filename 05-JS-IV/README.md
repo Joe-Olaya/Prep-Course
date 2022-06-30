@@ -64,6 +64,7 @@ La notación de corchetes es como llamar a un elemento en una matriz, aunque con
 
 ```javascript
 const passString = 'password';
+
 user['lovesJavascript']; // true
 user['username'];        // juan.perez
 user[passString];        // loremipsumpwd123
@@ -191,7 +192,7 @@ Cuando estamos dentro de una función, el valor de `this` va a depender de *cóm
 > f1() === window;
 < true
 
-> window.fi() === window;
+> window.f1() === window;
 < true
 ```
 
