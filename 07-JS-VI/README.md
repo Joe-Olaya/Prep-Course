@@ -57,7 +57,6 @@ Ya conocemos y utilizamos métodos de matriz, `.push`, `.pop`, `.shift`, `.unshi
 
 ```javascript
 const autos = ["Ford", "Chevrolet", "Toyota", "Tesla"];
-
 // Podemos escribir el callback en los paréntesis como una función anónima
 autos.forEach(function (elemento, indice) {
   console.log(elemento);
